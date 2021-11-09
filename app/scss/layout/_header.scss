@@ -1,0 +1,41 @@
+.header {
+  background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/main.jpeg") center/cover no-repeat;
+  height: calc(100vh - 7rem);
+
+  display: grid;
+  place-content: center;
+  color: var(--clr-white);
+
+  &__desc {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 6.4rem;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: var(--clr-white);
+    max-width: 720px;
+    margin: 0 auto 2rem auto;
+    letter-spacing: var(--spacing);
+    margin-bottom: 4rem;
+  }
+
+  &__btn {
+    padding: 1.5rem 3rem;
+    background-color: var(--clr-white);
+    color: var(--clr-primary-5);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    box-shadow: var(--light-shadow);
+    transition: var(--transition);
+
+    &:hover {
+      background-color: transparent;
+      color: var(--clr-white);
+    }
+  }
+}
