@@ -1,0 +1,47 @@
+.navbar {
+  & > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  &__logo-box {
+    width: 175px;
+    height: 30px;
+  }
+
+  &__logo {
+  }
+
+  &__list {
+    display: grid;
+    column-gap: 1.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+  }
+
+  &__list-items > a:link,
+  &__list-items > a:visited {
+    letter-spacing: var(--spacing);
+    color: var(--clr-grey-1);
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--clr-primary-5);
+    }
+  }
+
+  &__icons {
+    justify-self: right;
+
+    & > i:not(:first-child) {
+      margin-left: 1.5rem;
+    }
+
+    & > i {
+      font-size: 2rem;
+      color: var(--clr-primary-5);
+    }
+  }
+}
