@@ -17,11 +17,14 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="section-center">
+      <div class="section-center navbar__center">
         <div class="navbar__logo-box">
-          <img class="navbar__logo" src="images/logo.svg" alt="" />
+          <img class="nav-logo navbar__logo" src="./images/logo.svg" alt="" />
+          <button type="submit" class="navbar__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-        <ul class="navbar__list">
+        <ul class="navbar__list" id="nav-list">
           <li class="navbar__list-items"><a href="#">Home</a></li>
           <li class="navbar__list-items"><a href="#">About</a></li>
           <li class="navbar__list-items"><a href="#">Services</a></li>
@@ -45,5 +48,7 @@
         <a href="" class="header__btn">Explore Tours</a>
       </div>
     </header>
+    <script src="dist/script.js"></script>
   </body>
 </html>
+
